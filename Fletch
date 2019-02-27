@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Knife in row 1 col 2
+#Log in row 1 col 3
+
+while [ 1 ]; do
+	xdotool mousemove 1457 628 click $(( (RANDOM % 1 ) + 1 )) &
+	sleep $(( ( RANDOM % 1  ) + 2 ))
+
+	xdotool mousemove 1493 619 click $(( (RANDOM % 1 ) + 1 )) &
+	sleep $(( ( RANDOM % 1  ) + 2 ))
+
+	xdotool mousemove 264 822 click $(( (RANDOM % 1 ) + 1 )) &
+	sleep $(( ( RANDOM % 1  ) + 10 ))
+done
